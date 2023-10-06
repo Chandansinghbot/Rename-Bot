@@ -16,13 +16,13 @@ from helper.date import check_expi
 import os
 
 CHANNEL = os.environ.get('CHANNEL', "")
-STRING = os.environ.get("STRING", "")
-ADMIN = int(os.environ.get("ADMIN", 1484670284))
-bot_username = os.environ.get("BOT_USERNAME","GangsterBaby_renamer_BOT")
+STRING = os.environ.get("STRING", "BQCE39oaEietgHEyZ-_xzz1ENcFcybxVTUfPQt026VcCN34sj4V1IA9nxZ3mkaLlw73i9Ev7uNukSniCUL-in6-aEGSQlSpuxwYT3bC6OEvuaPh8Iuqd1RX2bE9zO6yaIH9lqNApkO8v6sN_O0MryuVnOmutXD9Sj-qiQkCTb4T86mH5axtQzyYYjpdEMPhZUgG3N7OQjbeAlvDn0hYgsnCm2YM-apvkGv8k1UfyCVUsTEsF_7F7GOdyoiaMIDHUJO9sdSa22FQhpE4kFSLgT42cKodNifa9q40heTn4HjRbJjioSmXeDX9GSbowque9KrE6TKjDimLwPQLj_djZseWdKPX9cgA")
+ADMIN = int(os.environ.get("ADMIN", 6100029268))
+bot_username = os.environ.get("BOT_USERNAME","premimum_renamebot")
 log_channel = int(os.environ.get("LOG_CHANNEL", ""))
 token = os.environ.get('TOKEN', '')
 botid = token.split(':')[0]
-FLOOD = 500
+FLOOD = 300
 LAZY_PIC = os.environ.get("LAZY_PIC", "")
 
 
@@ -46,16 +46,17 @@ async def start(client, message):
         id = message.text.split(' ')[1]
     except:
         txt=f"""Hello {wish} {message.from_user.first_name } \n\n
-	I am file renamer bot, Please sent any telegram**Document Or Video** and enter new filename to rename it"""
+	➻ ᴛʜɪꜱ ɪꜱ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴅ ʏᴇᴛ ᴘᴏᴡᴇʀꜰᴜʟ ʀᴇɴᴀᴍᴇ ʙᴏᴛ.\n\n➻ ᴜꜱɪɴɢ ᴛʜɪꜱ ʙᴏᴛ ʏᴏᴜ ᴄᴀɴ ʀᴇɴᴀᴍᴇ ᴀɴᴅ ᴄʜᴀɴɢᴇ ᴛʜᴜᴍʙɴᴀɪʟ ᴏꜰ ʏᴏᴜʀ ꜰɪʟᴇꜱ\n\n➻ ʏᴏᴜ ᴄᴀɴ ᴀʟꜱᴏ ᴄᴏɴᴠᴇʀᴛ ᴠɪᴅᴇᴏ ᴛᴏ ꜰɪʟᴇ ᴀɴᴅ ꜰɪʟᴇ ᴛᴏ ᴠɪᴅᴇᴏ.\n\n➻ ᴛʜɪꜱ ʙᴏᴛ ᴀʟꜱᴏ ꜱᴜᴘᴘᴏʀᴛꜱ ᴄᴜꜱᴛᴏᴍ ᴛʜᴜᴍʙɴᴀɪʟ ᴀɴᴅ ᴄᴜꜱᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ."""
         await message.reply_photo(photo=LAZY_PIC,
                                 caption=txt,
-                                reply_markup=InlineKeyboardMarkup(
-                                      [[InlineKeyboardButton("🔺 Update Channel 🔺", url="https://t.me/LazyDeveloper")],
-                                      [InlineKeyboardButton("🦋 Subscribe us 🦋", url="https://youtube.com/@LazyDeveloperr")],
-                                      [InlineKeyboardButton("Support Group", url='https://t.me/LazyPrincessSupport'),
-                                      InlineKeyboardButton("Movie Channel", url='https://t.me/real_MoviesAdda2')],
-                                      [InlineKeyboardButton("☕ Buy Me A Coffee ☕", url='https://p.paytm.me/xCTH/vo37hii9')]
-                                      ]))
+                                reply_markup=InlineKeyboardMarkup([[
+					InlineKeyboardButton("🦋 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🦋", url="https://t.me/elitecraft_studios")
+				], [
+					InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="https://t.me/elitecraft_support"),
+					InlineKeyboardButton("ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ", url='https://t.me/movie_request_zone5')
+				], [
+					InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ ᴍᴇ", url="https://tools.apgy.in/upi/IT'S+LUFFY/raghunandan34@paytm")
+				]]))
         return
     if id:
         if old == True:
@@ -63,13 +64,14 @@ async def start(client, message):
                 await client.send_message(id, "Your Friend is Already Using Our Bot")
                 await message.reply_photo(photo=LAZY_PIC,
                                          caption=txt,
-                                         reply_markup=InlineKeyboardMarkup(
-                                             [[InlineKeyboardButton("🔺 Update Channel 🔺", url="https://t.me/LazyDeveloper")],
-                                              [InlineKeyboardButton("🦋 Subscribe us 🦋", url="https://youtube.com/@LazyDeveloperr")],
-                                              [InlineKeyboardButton("Support Group", url='https://t.me/LazyPrincessSupport'),
-                                             InlineKeyboardButton("Movie Channel", url='https://t.me/real_MoviesAdda2')],
-                                             [InlineKeyboardButton("☕ Buy Me A Coffee ☕", url='https://p.paytm.me/xCTH/vo37hii9')]
-                                          ]))
+                                         reply_markup=([[
+					InlineKeyboardButton("🦋 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🦋", url="https://t.me/elitecraft_studios")
+				], [
+					InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="https://t.me/elitecraft_support"),
+					InlineKeyboardButton("ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ", url='https://t.me/movie_request_zone5')
+				], [
+					InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ ᴍᴇ", url="https://tools.apgy.in/upi/IT'S+LUFFY/raghunandan34@paytm")
+				]]))
             except:
                 return
         else:
@@ -79,17 +81,15 @@ async def start(client, message):
             new_limit = limit + 104857600
             uploadlimit(int(id), new_limit)
             await message.reply_text(text=f"""
-	Hello {wish} {message.from_user.first_name }\n\n
-	__I am file renamer bot, Please send any telegram 
-	**Document Or Video** and enter new filename to rename it__
-	""", reply_to_message_id=message.id,
-                                     reply_markup=InlineKeyboardMarkup(
-                                         [[InlineKeyboardButton("🔺 Update Channel 🔺", url="https://t.me/LazyDeveloper")],
-                                          [InlineKeyboardButton("🦋 Subscribe us 🦋", url="https://youtube.com/@LazyDeveloperr")],
-                                          [InlineKeyboardButton("Support Group", url='https://t.me/LazyPrincessSupport'),
-                                          InlineKeyboardButton("Movie Channel", url='https://t.me/real_MoviesAdda2')],
-                                          [InlineKeyboardButton("☕ Buy Me A Coffee ☕", url='https://p.paytm.me/xCTH/vo37hii9')]
-                                          ]))
+	Hello {wish} {message.from_user.first_name }\n\n➻ ᴛʜɪꜱ ɪꜱ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴅ ʏᴇᴛ ᴘᴏᴡᴇʀꜰᴜʟ ʀᴇɴᴀᴍᴇ ʙᴏᴛ.\n\n➻ ᴜꜱɪɴɢ ᴛʜɪꜱ ʙᴏᴛ ʏᴏᴜ ᴄᴀɴ ʀᴇɴᴀᴍᴇ ᴀɴᴅ ᴄʜᴀɴɢᴇ ᴛʜᴜᴍʙɴᴀɪʟ ᴏꜰ ʏᴏᴜʀ ꜰɪʟᴇꜱ\n\n➻ ʏᴏᴜ ᴄᴀɴ ᴀʟꜱᴏ ᴄᴏɴᴠᴇʀᴛ ᴠɪᴅᴇᴏ ᴛᴏ ꜰɪʟᴇ ᴀɴᴅ ꜰɪʟᴇ ᴛᴏ ᴠɪᴅᴇᴏ.\n\n➻ ᴛʜɪꜱ ʙᴏᴛ ᴀʟꜱᴏ ꜱᴜᴘᴘᴏʀᴛꜱ ᴄᴜꜱᴛᴏᴍ ᴛʜᴜᴍʙɴᴀɪʟ ᴀɴᴅ ᴄᴜꜱᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ.""", reply_to_message_id=message.id,
+                                     reply_markup=InlineKeyboardMarkup([[
+					InlineKeyboardButton("🦋 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🦋", url="https://t.me/elitecraft_studios")
+				], [
+					InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="https://t.me/elitecraft_support"),
+					InlineKeyboardButton("ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ", url='https://t.me/movie_request_zone5')
+				], [
+					InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ ᴍᴇ", url="https://tools.apgy.in/upi/IT'S+LUFFY/raghunandan34@paytm")
+				]]))
     
 
 
@@ -125,13 +125,14 @@ async def send_doc(client, message):
         user_type = user_deta["usertype"]
     except:
         await message.reply_text(text=f"Hello dear {message.from_user.first_name}  **we are currently working on this issue**\n\nPlease try to rename files from your another account.\nBecause this BOT can't rename file sent by some ids.\n\nIf you are an **ADMIN** Don't worry ! here we have a solution for you dear {message.from_user.first_name }.\n\nPlease use \n👉 `/addpremium your_other_userid` 👈 to use premium feautres\n\n",
-                                  reply_markup=InlineKeyboardMarkup([
-                                                                     [InlineKeyboardButton("🦋 Contact LazyDeveloper 🦋", url='https://telegram.me/LazyDeveloper')],
-                                                                     [InlineKeyboardButton("🔺 Watch Tutorial 🔺", url='https://youtube.com/@LazyDeveloperr')],
-                                                                     [InlineKeyboardButton("🦋 Visit Channel  ", url='https://t.me/LazyDeveloper'),
-                                                                     InlineKeyboardButton("  Support Group 🦋", url='https://t.me/LazyPrincessSupport')],
-                                                                     [InlineKeyboardButton("☕ Buy Me A Coffee ☕", url='https://p.paytm.me/xCTH/vo37hii9')]
-                                                                    ]))
+                                  reply_markup=InlineKeyboardMarkup([[
+					InlineKeyboardButton("🦋 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🦋", url="https://t.me/elitecraft_studios")
+				], [
+					InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="https://t.me/elitecraft_support"),
+					InlineKeyboardButton("ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ", url='https://t.me/movie_request_zone5')
+				], [
+					InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ ᴍᴇ", url="https://tools.apgy.in/upi/IT'S+LUFFY/raghunandan34@paytm")
+				]]))
         await message.reply_text(text=f"🦋")
         return 
 
