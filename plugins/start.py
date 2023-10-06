@@ -55,7 +55,7 @@ async def start(client, message):
 					InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="https://t.me/elitecraft_support"),
 					InlineKeyboardButton("ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ", url='https://t.me/movie_request_zone5')
 				], [
-					InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ ᴍᴇ", url="https://tools.apgy.in/upi/IT'S+LUFFY/raghunandan34@paytm")
+					InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ ᴍᴇ", url="https://tools.apgy.in/upi/IT'S+LUFFY/raghunandan34@paytm/")
 				]]))
         return
     if id:
@@ -70,7 +70,7 @@ async def start(client, message):
 					InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="https://t.me/elitecraft_support"),
 					InlineKeyboardButton("ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ", url='https://t.me/movie_request_zone5')
 				], [
-					InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ ᴍᴇ", url="https://tools.apgy.in/upi/IT'S+LUFFY/raghunandan34@paytm")
+					InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ ᴍᴇ", url="https://tools.apgy.in/upi/IT'S+LUFFY/raghunandan34@paytm/")
 				]]))
             except:
                 return
@@ -88,7 +88,7 @@ async def start(client, message):
 					InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="https://t.me/elitecraft_support"),
 					InlineKeyboardButton("ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ", url='https://t.me/movie_request_zone5')
 				], [
-					InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ ᴍᴇ", url="https://tools.apgy.in/upi/IT'S+LUFFY/raghunandan34@paytm")
+					InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ ᴍᴇ", url="https://tools.apgy.in/upi/IT'S+LUFFY/raghunandan34@paytm/")
 				]]))
     
 
@@ -131,7 +131,7 @@ async def send_doc(client, message):
 					InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="https://t.me/elitecraft_support"),
 					InlineKeyboardButton("ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ", url='https://t.me/movie_request_zone5')
 				], [
-					InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ ᴍᴇ", url="https://tools.apgy.in/upi/IT'S+LUFFY/raghunandan34@paytm")
+					InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ ᴍᴇ", url="https://tools.apgy.in/upi/IT'S+LUFFY/raghunandan34@paytm/")
 				]]))
         await message.reply_text(text=f"🦋")
         return 
